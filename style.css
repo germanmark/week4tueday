@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: bisque;
+}
+
+#logo{
+    height: 75px;
+}
+
+#pageHeader{
+    display: grid;
+    background-color: dimgray;
+    min-height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#pageHeader > h1 {
+    justify-self: center;
+    align-self: center;
+    font-size: 3.5rem;
+    color: #1e347c;
+    text-shadow: 3px 3px #94B0DA;
+}
+
+#pageHeader > nav {
+    justify-self: end;
+    align-self: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 5px #94B0DA solid;
+    border-radius: 25%;
+    padding: 0.25rem;
+    margin: 10px;
+}
+
+#mainSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    column-gap: 5vw;
+    row-gap: 5vh;
+}
+
+section > img {
+    max-width: 100%;
+}
+
+#footer{
+    margin-top: 20vh;
+}
+
+footer > nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+}
