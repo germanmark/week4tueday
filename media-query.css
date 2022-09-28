@@ -1,0 +1,53 @@
+/* Mobile rules */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: bisque;
+}
+
+#logo{
+    height: 75px;
+}
+
+#pageHeader{
+    display: grid;
+    background-color: dimgray;
+    min-height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#pageHeader > h1 {
+    display: none;
+    justify-self: center;
+    align-self: center;
+    font-size: 3.5rem;
+    color: #1e347c;
+    text-shadow: 3px 3px #94B0DA;
+}
+
+#pageHeader > nav {
+    justify-self: end;
+    align-self: center;
+}
+
+/* Tablet media query */
+@media only screen and (min-width: 600px) {
+    #logo{
+        height: 150px;
+    }
+    #pageHeader > h1{
+        display: initial;
+    }
+    
+}
+
+/* Desktop media query */
+@media only screen and (min-width: 1100px) {
+    #pageHeader > h1{
+        font-size: 4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+

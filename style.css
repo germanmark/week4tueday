@@ -42,17 +42,24 @@ nav a {
 
 #mainSection {
     display: grid;
+    min-height: calc(100vh - 200px);
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     column-gap: 5vw;
     row-gap: 5vh;
+}
+
+.cardGrid{
+    display: grid;
+    grid-auto-rows: min-content;
 }
 
 section > img {
     max-width: 100%;
 }
 
-#footer{
-    margin-top: 20vh;
+.movieTitle {
+    max-height: 7vh;
+    box-sizing: content-box;
 }
 
 footer > nav{
